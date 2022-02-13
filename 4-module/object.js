@@ -29,12 +29,13 @@ const typeOfArgument = (arg) => {
 };
 // typeOfArgument("abcs");
 
-const isPrime = (num) => {
+function isPrime(num) {
   if (num <= 1) return false;
   if (num === 2 || num === 3) return true;
   let ans = false;
   if ((num - 1) % 6 === 0) ans = true;
   else if ((num + 1) % 6 === 0) ans = true;
   return ans;
-};
-console.log(isPrime(11));
+}
+// console.log(isPrime(11));
+module.exports = isPrime;
